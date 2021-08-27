@@ -1,4 +1,8 @@
-# Bootstrap4
+# Bootstrap4 Plus
+
+Forked from [Trilby Media Bootstrap4](https://github.com/trilbymedia/grav-theme-bootstrap4) to try some improvements. For more details see [Changelog](https://github.com/cron-ix/grav-theme-bootstrap4-plus/blob/develop/CHANGELOG.md).
+
+Bootstrap4 readme:
 
 ![Bootstrap](assets/readme_1.png)
 
