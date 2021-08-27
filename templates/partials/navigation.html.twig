@@ -1,7 +1,9 @@
 {% set navbar_style = theme_var('navbar_style') %}
 {% set navbar_bgcolor = theme_var('navbar_bgcolor') %}
+{% set navbar_expand = theme_var('navbar_expand') %}
+{% set navbar_position = theme_var('navbar_position') %}
 
-<nav class="navbar navbar-expand-md {{ navbar_style|e }}" style="background-color:{{ navbar_bgcolor|e }};" role="navigation">
+<nav class="navbar {{ navbar_expand|e }} {{ navbar_position|e }} {{ navbar_style|e }}" style="background-color:{{ navbar_bgcolor|e }};" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title|e('html') }}</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,8 +19,11 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.menu }}</a>
                             <div class="dropdown-menu">
                                 {% set current_parent = page.active ? 'active' : '' %}
-                                <a href="{{ page.url }}" class="dropdown-item {{ current_parent }}">{{ page.menu }}</a>
-                                <div class="dropdown-divider"></div>
+                                {% if theme.extra_child_link.enabled %}
+                                    {# see https://github.com/getgrav/grav-theme-bootstrap/issues/10 #}
+                                    <a href="{{ page.url }}" class="dropdown-item {{ current_parent }}">{{ page.menu }}</a>
+                                    <div class="dropdown-divider"></div>
+                                {% endif %}    
                                 {% for child in page.children.visible %}
                                     {% set current_child = (child.active or child.activeChild) ? 'active' : '' %}
                                     <a href="{{ child.url }}" class="dropdown-item {{ current_child }}">{{ child.menu }}</a>

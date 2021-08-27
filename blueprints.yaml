@@ -1,14 +1,14 @@
-name: Bootstrap4
-version: 1.2.1
-description: "Bootstrap4 is built using the popular **Bootstrap 4** Framework"
+name: Bootstrap4 Plus
+version: 1.0.0
+description: "Bootstrap4 Plus is built using the popular **Bootstrap 4** Framework and forked from Trilby Medias Bootstrap4 theme"
 icon: bold
 author:
-  name: Trilby Media
-  email: hello@trilby.media
-  url: https://trilby.media
-homepage: https://github.com/trilbymedia/grav-theme-bootstrap4
+  name: cron-ix
+  email: cron-ix@sampple.de
+  url: https://cron-ix.github.io
+homepage: https://github.com/cron-ix/grav-theme-bootstrap4-plus
 keywords: bootstrap, bootstrap4, theme, framework
-bugs: https://github.com/trilbymedia/grav-theme-bootstrap4/issues
+bugs: https://github.com/cron-ix/grav-theme-bootstrap4-plus/issues
 license: MIT
 
 dependencies:
@@ -33,6 +33,39 @@ form:
       label: NavBar BG Color
       size: small
       default: '#ffffff'
+
+    navbar_expand:
+      type: select
+      label: NavBar responsive collapsing class
+      size: small
+      default: navbar-expand-lg
+      options:
+        navbar-expand-xl: X-Large
+        navbar-expand-lg: Large
+        navbar-expand-md: Medium
+        navbar-expand-sm: Small
+
+    navbar_position:
+      type: select
+      label: NavBar position
+      size: small
+      default: fixed-top
+      options:
+        none: Default
+        fixed-top: Fixed top
+        fixed-bottom: Fixed bottom
+        sticky-top: Sticky top
+          
+    extra_child_link.enabled:
+        type: toggle
+        label: Show extra child link in dropdown
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
 
     dropdown.enabled:
         type: toggle
