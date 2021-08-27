@@ -1,12 +1,12 @@
 {
-   "project":"grav-theme-bootstrap4",
+   "project":"grav-theme-bootstrap4-plus",
    "platforms":{
       "grav":{
          "nodes":{
             "theme":[
                {
                   "source":"/",
-                  "destination":"/user/themes/bootstrap4"
+                  "destination":"/user/themes/bootstrap4plus"
                }
             ]
          }
