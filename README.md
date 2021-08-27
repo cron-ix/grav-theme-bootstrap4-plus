@@ -2,6 +2,12 @@
 
 Forked from [Trilby Media Bootstrap4](https://github.com/trilbymedia/grav-theme-bootstrap4) to try some improvements. For more details see [Changelog](https://github.com/cron-ix/grav-theme-bootstrap4-plus/blob/develop/CHANGELOG.md).
 
+## Quick install guide using git command:
+* change dir to your themes directory: `$ cd user/themes/`
+* clone repo: `$ git clone https://github.com/cron-ix/grav-theme-bootstrap4-plus.git`
+* rename directory: `$ mv grav-theme-bootstrap4-plus/ bootstrap4plus/`
+* to update theme: goto bootstrap4plus directory and `$ git pull`
+
 Bootstrap4 readme:
 
 ![Bootstrap](assets/readme_1.png)
