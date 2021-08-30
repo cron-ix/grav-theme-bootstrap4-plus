@@ -3,9 +3,37 @@
 {% set navbar_expand = theme_var('navbar_expand') %}
 {% set navbar_position = theme_var('navbar_position') %}
 
+{% set logo = config.theme.custom_logo %}
+{% if logo %}
+  {% set logo = (logo|first).name %}
+{% else %}
+  {% set logo = "lore_ipsum_logo.svg" %}
+{% endif %}
+
 <nav class="navbar {{ navbar_expand|e }} {{ navbar_position|e }} {{ navbar_style|e }}" style="background-color:{{ navbar_bgcolor|e }};" role="navigation">
     <div class="container">
-        <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title|e('html') }}</a>
+        <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
+            {% if config.theme.use_logo %}
+                <img
+                src="{{url('theme://images')}}/{{logo}}"
+                style="object-fit: contain;
+                    {% if not config.theme.size_dimension %}
+                    width:{{config.theme.logo_size}}px;
+                    {% else %}
+                    height:{{config.theme.logo_size}}px;
+                    {% endif %}
+                    {% if config.theme.title_in_menu == '' %}
+                    max-width: 100%;
+                    {% else %}
+                    max-width: 50%;
+                    {% endif %}
+                    "
+                alt="{{site.name}}">
+            {% endif %}          
+            {{ config.theme.title_in_menu|e('html') }}
+            {# {{ site.title|e('html') }} #}
+        </a>
+
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
