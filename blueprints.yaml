@@ -77,3 +77,9 @@ form:
           0: Disabled
         validate:
           type: bool
+
+    navbar.brand_logo:
+      type: mediapicker
+      folder: 'theme://images'
+      label: Select navbar logo from theme://images
+      preview_images: true
