@@ -27,7 +27,7 @@
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-      background-color: #f8f9fa; }
+      background-color: #000; }
   
   .hamburger-box {
     width: 40px;
@@ -42,7 +42,7 @@
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
-      background-color: #f8f9fa;
+      background-color: #000;
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
@@ -56,6 +56,26 @@
     .hamburger-inner::after {
       bottom: -10px; }
   
+  .navbar-dark {
+    .hamburger {
+      background-color: #fff;
+    }
+    .hamburger-inner {
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #fff;
+    }
+  }
+  .navbar-light {
+    .hamburger {
+      background-color: #000;
+    }
+    .hamburger-inner {
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #000;
+    }
+  }
+
+  }
   /*
      * 3DX
      */
