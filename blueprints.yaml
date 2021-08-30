@@ -97,7 +97,7 @@ form:
       type: file
       label: Upload your logo
       help: It will be displayed in the navbar
-      description: Will be used instead of default logo `theme://images/lore_ipsum_logo.svg`
+      description: First image will be used instead of default logo `theme://images/lore_ipsum_logo.svg`
       destination: 'theme@:/images'
       accept:
         - image/*
