@@ -386,7 +386,7 @@ body.fixed-nav {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #f8f9fa; }
+  background-color: #000; }
 
 .hamburger-box {
   width: 40px;
@@ -402,7 +402,7 @@ body.fixed-nav {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #f8f9fa;
+  background-color: #000;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -418,6 +418,16 @@ body.fixed-nav {
 
 .hamburger-inner::after {
   bottom: -10px; }
+
+.navbar-dark .hamburger {
+  background-color: #fff; }
+.navbar-dark .hamburger-inner .hamburger-inner, .navbar-dark .hamburger-inner .hamburger-inner::before, .navbar-dark .hamburger-inner .hamburger-inner::after {
+  background-color: #fff; }
+
+.navbar-light .hamburger {
+  background-color: #000; }
+.navbar-light .hamburger-inner .hamburger-inner, .navbar-light .hamburger-inner .hamburger-inner::before, .navbar-light .hamburger-inner .hamburger-inner::after {
+  background-color: #000; }
 
 /*
    * 3DX
