@@ -14,18 +14,18 @@
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
             {% if theme_var('use_logo') %}
-                <img src="{{url('theme://images')}}/{{logo}}" style="object-fit: contain;
-                    {% if not theme_var('size_dimension') %}
-                        width: {{ theme_var('logo_size') }}px;
-                    {% else %}
-                        height: {{ theme_var('logo_size') }}px;
-                    {% endif %}
-                    {% if theme_var('title_in_menu') == '' %}
-                        max-width: 100%;
-                    {% else %}
-                        max-width: 50%;
-                    {% endif %}"
-                alt="{{site.name}}">
+            <img src="{{url('theme://images')}}/{{logo}}" style="object-fit: contain;
+            {% if not theme_var('size_dimension') %}
+            width: {{ theme_var('logo_size') }}px;
+            {% else %}
+            height: {{ theme_var('logo_size') }}px;
+            {% endif %}
+            {% if theme_var('title_in_menu') == '' %}
+            max-width: 100%;
+            {% else %}
+            max-width: 50%;
+            {% endif %}"
+            alt="{{site.name}}">
             {% endif %}          
             {{ theme_var('title_in_menu')|e('html') }}
             {# {{ site.title|e('html') }} #}
