@@ -1,0 +1,7 @@
+navbar_style: navbar-light
+navbar_bgcolor: '#ffffff'
+hamburger_animation: 'hamburger--squeeze'
+
+dropdown:
+  enabled: false
+
