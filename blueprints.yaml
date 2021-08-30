@@ -84,7 +84,7 @@ form:
       help:  If you do not worry about styling, just enter a short title. But you can also provide a HTML string with inline styles here to easily style the title in the menu.
     use_logo:
       label: Use logo
-      help: Specify if you like to have a logo at the top of the menu
+      help: Specify if you like to have a logo at the left of the menu
       type: toggle
       highlight: 1
       default: 1
@@ -96,7 +96,7 @@ form:
     custom_logo:
       type: file
       label: Upload your logo
-      help: It will be displayed in the sidebar
+      help: It will be displayed in the navbar
       description: Will be used instead of default logo `theme://images/lore_ipsum_logo.svg`
       destination: 'theme@:/images'
       accept:
@@ -106,7 +106,7 @@ form:
       label: Logo size in pixels
       help:  Set the Logo size in pixels
     size_dimension:
-      label: Dimension to resize
+      label: Dimension to resize the logo
       type: toggle
       default: 0
       options:
