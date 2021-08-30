@@ -78,7 +78,7 @@ form:
         validate:
           type: bool
 
-    navbar.brand_logo:
+    header.theme.navbar_brand_logo:
       type: filepicker
       folder: 'theme://images'
       label: Select navbar logo from theme://images
