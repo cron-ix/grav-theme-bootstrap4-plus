@@ -1,12 +1,6 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="toggle-button hamburger {{ theme_var('hamburger_animation') }}">
-        <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-        </div>
-    </div>
-
     <div class="main-content">
         <div class="container">
             {{ page.content|raw }}
