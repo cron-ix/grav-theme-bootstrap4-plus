@@ -14,9 +14,7 @@
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
             {% if theme_var('use_logo') %}
-                <img
-                src="{{url('theme://images')}}/{{logo}}"
-                style="object-fit: contain;
+                <img src="{{url('theme://images')}}/{{logo}}" style="object-fit: contain;
                     {% if not config.theme.size_dimension %}
                     width:{{config.theme.logo_size}}px;
                     {% else %}
