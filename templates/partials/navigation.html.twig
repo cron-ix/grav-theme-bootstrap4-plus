@@ -15,19 +15,19 @@
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
             {% if theme_var('use_logo') %}
                 <img src="{{url('theme://images')}}/{{logo}}" style="object-fit: contain;
-                    {% if not config.theme.size_dimension %}
-                    width:{{config.theme.logo_size}}px;
+                    {% if not theme_var('size_dimension') %}
+                        width: {{ theme_var('logo_size') }}px;
                     {% else %}
-                    height:{{config.theme.logo_size}}px;
+                        height: {{ theme_var('logo_size') }}px;
                     {% endif %}
-                    {% if config.theme.title_in_menu == '' %}
-                    max-width: 100%;
+                    {% if theme_var('title_in_menu') == '' %}
+                        max-width: 100%;
                     {% else %}
-                    max-width: 50%;
+                        max-width: 50%;
                     {% endif %}"
                 alt="{{site.name}}">
             {% endif %}          
-            {{ config.theme.title_in_menu|e('html') }}
+            {{ theme_var('title_in_menu')|e('html') }}
             {# {{ site.title|e('html') }} #}
         </a>
 
