@@ -100,4 +100,17 @@ form:
       description: Will be used instead of default logo `theme://images/lore_ipsum_logo.svg`
       destination: 'theme@:/images'
       accept:
-        - image/*           
+        - image/*
+      logo_size:
+        type: number
+        label: Logo size in pixels
+        help:  Set the Logo size in pixels
+      size_dimension:
+        label: Dimension to resize
+        type: toggle
+        default: 0
+        options:
+          0: "width"
+          1: "height"
+
+      
