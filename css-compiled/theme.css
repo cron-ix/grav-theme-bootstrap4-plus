@@ -386,7 +386,7 @@ body.fixed-nav {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000; }
+  background-color: #f8f9fa; }
 
 .hamburger-box {
   width: 40px;
@@ -402,7 +402,7 @@ body.fixed-nav {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: #f8f9fa;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
