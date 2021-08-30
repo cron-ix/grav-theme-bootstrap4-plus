@@ -79,7 +79,13 @@ form:
           type: bool
 
     navbar.brand_logo:
-      type: mediapicker
+      type: filepicker
       folder: 'theme://images'
       label: Select navbar logo from theme://images
       preview_images: true
+      accept:
+        - .png
+        - .jpg
+        - .svg
+        - .gif
+        - .bmp
