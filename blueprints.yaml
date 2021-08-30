@@ -110,7 +110,7 @@ form:
       type: number
       label: Logo size in pixels
       help:  Set the Logo size in pixels
-      
+
     size_dimension:
       label: Dimension to resize the logo
       type: toggle
@@ -118,5 +118,9 @@ form:
       options:
         0: "width"
         1: "height"
+
+    hamburger_animation:
+      type: text
+      label: Specify the hamburger animation. <a href="https://jonsuh.com/hamburgers/">Reference</a>
 
       
