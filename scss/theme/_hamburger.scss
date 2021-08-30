@@ -60,22 +60,25 @@
     .hamburger {
       background-color: #fff;
     }
+  
     .hamburger-inner {
       .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         background-color: #fff;
+      }
     }
   }
   .navbar-light {
     .hamburger {
       background-color: #000;
     }
+    
     .hamburger-inner {
       .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         background-color: #000;
+      }
     }
   }
 
-  }
   /*
      * 3DX
      */
