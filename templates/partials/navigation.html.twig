@@ -13,7 +13,7 @@
 <nav class="navbar {{ navbar_expand|e }} {{ navbar_position|e }} {{ navbar_style|e }}" style="background-color:{{ navbar_bgcolor|e }};" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
-            {% if config.theme.use_logo %}
+            {% if theme_var('use_logo') %}
                 <img
                 src="{{url('theme://images')}}/{{logo}}"
                 style="object-fit: contain;
